@@ -5,7 +5,7 @@
 .header{
       min-height: 100vh;
       width: 100%;
-      background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url("image/1033009.jpg");
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url("img/banner.png");
       background-position: center;
       background-size: cover;
       position: relative;
@@ -101,16 +101,8 @@ nav .fa{
     display: none;
 }
 @media(max-width:700px){
-    .txt-box h1{
+    .text-box h1{
         font-size: 20px;
-    }
-    nav .fa{
-        display: block;
-        color: #ffffff;
-        margin-block-end: 10px;
-        font-size: 22px;
-        cursor: pointer;
-
     }
     .nav-links ul li {
         display: block;
@@ -129,12 +121,20 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
+    nav.fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
 }
 
-/*---------------------detail----------------*/
-.detail{
+/*---------------------course----------------*/
+.course{
     width: 80%;
-    min-height: 80vh;
+    min-height: 40vh;
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -159,9 +159,9 @@ p{
     justify-content: space-between;
 }
 
-.detail-col{
+.course-col{
     flex-basis:31%;
-    background: #dd9893;
+    background: #f9f7f7;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -175,12 +175,21 @@ h3{
     margin:10px 0;
 
 }
-.detail-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+.course-col:hover{
+    box-shadow: 0 0 90px 0px rgba(0, 0, 0, 0.2);
 }
 
-/*------------about--------------------*/
-.about{
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*------------campus--------------------*/
+.campus{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -188,14 +197,14 @@ h3{
 
 }
 
-.about-col{
+.campus-col{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-.about-col img{
+.campus-col img{
     width: 100%;
     display: block;
 
@@ -230,11 +239,83 @@ h3{
     opacity: 1;
 }
 
+
+/*----------facility--------------*/
+.facility{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding: top 100px; ;
+}
+
+.facility-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facility-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facility-col p{
+    padding: 0;
+}
+.facility-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*--------------testimonials---------*/
+
+.test{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.test-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #e8c2bf;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.test-col img{
+    height:40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.test-col p{
+    padding: 0;
+}
+
+.test-col h3{
+    margin: top 15px;
+    text-align: left;
+}
+
+@media(max-width:700px){
+    .test-col img{
+        margin-left: 0%;
+        margin-right: 15px;
+    }
+
+}
+
+
 /*------------cta----------*/
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/contact.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/banner2.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -248,6 +329,13 @@ h3{
     padding:0;
 }
 
+@media(max-width:700px) {
+    .cta h1{
+        font: size 24px;
+    }
+}
+
+
 /*----footer-----*/
 .footer{
     width: 100%;
@@ -256,7 +344,8 @@ h3{
 }
 
 .footer h4{
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-top: 20px;
     font-weight: 600;
 }
+
